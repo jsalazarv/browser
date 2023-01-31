@@ -10,14 +10,14 @@
       id="sidebar"
       class="-translate-x-full w-56 position-fixed bg-white shadow-xl text-gray-100 space-y-6 absolute inset-y-0 left-0 transform md:relative md:translate-x-0 transition-all duration-500 md:flex md:flex-col"
       :class="{
-       'translate-x-1 md:w-14': isOpen
+       '-translate-x-1 md:w-14': isOpen
       }"
       data-dev-hint="sidebar; px-0 for frameless; px-2 for visually inset the navigation">
       <button
         class="absolute z-10 -right-[60px] md:-right-[14px] top-3/4 md:top-32 bg-blue-600 rounded-full w-10 h-10 md:w-7 md:h-7"
         :class="{
           '-right-[20px] transition-all duration-500': isOpen,
-          '-right-[14px] transition-all duration-500': !isOpen,
+          '-right-[60px] transition-all duration-500': !isOpen,
         }"
         @click="onToggleSidebar">
         o
